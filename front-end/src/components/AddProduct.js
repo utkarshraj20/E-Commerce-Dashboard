@@ -28,7 +28,7 @@ const AddProduct = () => {
         const userId = JSON.parse(localStorage.getItem('user'));
         console.log(userId._id);
 
-        let result = await fetch('https://mern-back-end-aikk.onrender.com/add-product', {
+        let result = await fetch('https://mern-backend-qqs9.onrender.com/add-product', {
             method: 'post',
             body: JSON.stringify({ name, price, cateogry, company, userId }),
             headers: {

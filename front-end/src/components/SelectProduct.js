@@ -18,7 +18,7 @@ const SelectProduct = () => {
     }, []);
 
     const getProducts = async () => {
-        let result = await fetch('https://mern-back-end-aikk.onrender.com/products', {
+        let result = await fetch('https://mern-backend-qqs9.onrender.com/products', {
 
             headers: {
                 authorization: `bearer ${JSON.parse(localStorage.getItem('token'))}`
@@ -32,7 +32,7 @@ const SelectProduct = () => {
 
     const deleteProduct = async (id) => {
         console.log(id);
-        let result = await fetch(`https://mern-back-end-aikk.onrender.com/product/${id}`, {
+        let result = await fetch(`https://mern-backend-qqs9.onrender.com/product/${id}`, {
             method: 'Delete',
             headers: {
                 authorization: `bearer ${JSON.parse(localStorage.getItem('token'))}`
@@ -49,7 +49,7 @@ const SelectProduct = () => {
         console.log(event.target.value);
         let key = event.target.value;
         if (key) {
-            let result = await fetch(`https://mern-back-end-aikk.onrender.com/search/${key}`, {
+            let result = await fetch(`https://mern-backend-qqs9.onrender.com/search/${key}`, {
                 headers: {
                     authorization: `bearer ${JSON.parse(localStorage.getItem('token'))}`
                 }

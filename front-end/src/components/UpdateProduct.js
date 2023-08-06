@@ -22,7 +22,7 @@ const UpdateProduct = () => {
     }, [])
 
     const getProductDetails = async () => {
-        let result = await fetch(`https://mern-back-end-aikk.onrender.com/product/${params.id}`, {
+        let result = await fetch(`https://mern-backend-qqs9.onrender.com/product/${params.id}`, {
             headers: {
                 authorization: `bearer ${JSON.parse(localStorage.getItem('token'))}`
             }
@@ -38,7 +38,7 @@ const UpdateProduct = () => {
     }
     const UpdateProduct = async () => {
         // console.log(name, price, cateogry, company);
-        let result = await fetch(`https://mern-back-end-aikk.onrender.com/product/${params.id}`, {
+        let result = await fetch(`https://mern-backend-qqs9.onrender.com/product/${params.id}`, {
             method: 'put',
             body: JSON.stringify({name, price, cateogry, company}),
             headers: {

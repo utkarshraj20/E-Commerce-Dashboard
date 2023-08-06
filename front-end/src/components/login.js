@@ -22,7 +22,7 @@ const Login = () => {
 
     const handleLogin = async () => {
 
-        let result = await fetch('https://mern-back-end-aikk.onrender.com/login', {
+        let result = await fetch('https://mern-backend-qqs9.onrender.com/login', {
             method: 'post',
             body: JSON.stringify({ email, password }),
             headers: {

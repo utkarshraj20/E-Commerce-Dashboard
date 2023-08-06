@@ -28,7 +28,7 @@ const SignUp = () => {
             alert('Please Enter valid credentials');
             return false;
         }
-        let result = await fetch('https://mern-back-end-aikk.onrender.com/register', {
+        let result = await fetch('https://mern-backend-qqs9.onrender.com/register', {
             method: 'post',
             body: JSON.stringify({name,email,password}),
             headers: {
